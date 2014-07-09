@@ -1,10 +1,13 @@
 # Custom Watch face for an Android Wear
 
+![alt text](https://raw.githubusercontent.com/9elements/9elements-One-for-Android-Wear/master/9elements-one-blog.jpg "Custom Watch Face - 9elements One")
+
 This is an example project that shows you how to implement a custom watch face.
+The main project codes lies in the
 
 ## Modifying the AndroidManifest.xml
 
-´´´
+```
 <activity
     android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
     android:name=".NineWatchWearActivity"
@@ -20,15 +23,17 @@ This is an example project that shows you how to implement a custom watch face.
     </intent-filter>
 </activity>
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-´´´
+```
 
 # TODO
 
-This example has been created with AndroidStudio 0.8.1
+* Using `WatchViewStub` to differentiate between a square or round wearable.
+* Finding out why the dim removes the views when the debug cable is connected.
+* Checking why the battery is drained so fast.
 
-# TODO
+# ENVIRONMENT
 
-See TODO.md
+This example has been created with AndroidStudio 0.8.1 - it has also been tested on the Samsung Gear Live.
 
 # CREDITS
 
