@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NineElementsWatch</string>
+    <string name="hello_world">Check out the wear app!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
