@@ -3,7 +3,8 @@
 ![alt text](https://raw.githubusercontent.com/9elements/9elements-One-for-Android-Wear/master/9elements-one-blog.jpg "Custom Watch Face - 9elements One")
 
 This is an example project that shows you how to implement a custom watch face.
-The main project codes lies in the
+The main project codes lies in the `wear` module. You can install it directly to the wearable device via USB.
+The big secret how to create a custom watch face lies in a special intent filter described by the next section:
 
 ## Modifying the AndroidManifest.xml
 
