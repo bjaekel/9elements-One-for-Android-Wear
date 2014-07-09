@@ -1,4 +1,4 @@
-# Custom Watch face for an Android Wear
+# Custom Watch face for Android Wear
 
 ![alt text](https://raw.githubusercontent.com/9elements/9elements-One-for-Android-Wear/master/9elements-one-blog.jpg "Custom Watch Face - 9elements One")
 
