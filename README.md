@@ -26,6 +26,14 @@ The big secret how to create a custom watch face lies in a special intent filter
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 ```
 
+# APK?
+
+If you’re interested in getting the final APK (without compiling the code by yourself) please leave your email in this list:
+
+http://androidweekly.us2.list-manage.com/subscribe?u=887caf4f48db76fd91e20a06d&id=f63e296981
+
+PS: We’ll never send you spam or share the email.
+
 # TODO
 
 * Using `WatchViewStub` to differentiate between a square or round wearable.
