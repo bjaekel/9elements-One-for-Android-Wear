@@ -1,4 +1,4 @@
-package com.ninelements.nineelementsonewatch;
+package com.nineelements.nineelementsonewatch;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -11,7 +11,7 @@ import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.ninelements.nineelementsonewatch.models.TimeToWordsEnglish;
+import com.nineelements.nineelementsonewatch.models.TimeToWordsEnglish;
 
 import java.lang.*;
 import java.util.Calendar;
@@ -22,7 +22,7 @@ public class NineWatchWearActivity extends Activity {
     private final static IntentFilter intentFilter;
     private boolean isDimmed = false;
     private TimeToWordsEnglish timeToWords;
-    private com.ninelements.nineelementsonewatch.models.Character[][] characterArray;
+    private com.nineelements.nineelementsonewatch.models.Character[][] characterArray;
     private TextView[][] textViews;
 
     static {
@@ -75,7 +75,7 @@ public class NineWatchWearActivity extends Activity {
             for (int j = 0; j < timeToWords.getWidth(); j++) {
 
                 TextView textView = new TextView(this);
-                com.ninelements.nineelementsonewatch.models.Character character = characterArray[i][j];
+                com.nineelements.nineelementsonewatch.models.Character character = characterArray[i][j];
                 textView.setTextSize(15);
 
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
@@ -99,7 +99,7 @@ public class NineWatchWearActivity extends Activity {
 
         for (int i = 0; i < timeToWords.getHeight(); i++) {
             for (int j = 0; j < timeToWords.getWidth(); j++) {
-                com.ninelements.nineelementsonewatch.models.Character character = characterArray[i][j];
+                com.nineelements.nineelementsonewatch.models.Character character = characterArray[i][j];
                 TextView textView = textViews[j][i];
 
                 updateTextViewForCharacter(textView, character);
@@ -107,7 +107,7 @@ public class NineWatchWearActivity extends Activity {
         }
     }
 
-    public void updateTextViewForCharacter(TextView textView, com.ninelements.nineelementsonewatch.models.Character character) {
+    public void updateTextViewForCharacter(TextView textView, com.nineelements.nineelementsonewatch.models.Character character) {
         textView.setText("" + character.getCharacter());
 
         if(character.isOn()) {

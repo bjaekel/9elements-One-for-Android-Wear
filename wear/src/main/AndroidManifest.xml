@@ -13,7 +13,7 @@
         android:theme="@android:style/Theme.DeviceDefault" >
         <activity
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
-            android:name="com.ninelements.nineelementsonewatch.NineWatchWearActivity"
+            android:name="com.nineelements.nineelementsonewatch.NineWatchWearActivity"
             android:label="@string/app_name"
             android:allowEmbedded="true"
             >

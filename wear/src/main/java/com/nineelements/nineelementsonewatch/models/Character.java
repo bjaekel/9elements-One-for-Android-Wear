@@ -1,4 +1,4 @@
-package com.ninelements.nineelementsonewatch.models;
+package com.nineelements.nineelementsonewatch.models;
 
 /**
  * Created by sebastiandeutsch on 08.07.14.

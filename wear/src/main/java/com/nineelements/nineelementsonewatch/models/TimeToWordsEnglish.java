@@ -1,4 +1,4 @@
-package com.ninelements.nineelementsonewatch.models;
+package com.nineelements.nineelementsonewatch.models;
 
 import java.util.Calendar;
 
