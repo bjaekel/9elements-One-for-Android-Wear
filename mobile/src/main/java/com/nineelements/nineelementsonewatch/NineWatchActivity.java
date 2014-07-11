@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-import firstwatch.com.nineelements.nineelementsone.R;
-
 public class NineWatchActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
