@@ -8,7 +8,7 @@ The big secret how to create a custom watch face lies in a special intent filter
 
 ## Modifying the AndroidManifest.xml
 
-```
+```xml
 <activity
     android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
     android:name=".NineWatchWearActivity"
