@@ -8,12 +8,12 @@ import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.nineelements.nineelementsonewatch.models.TimeToWordsEnglish;
 
-import java.lang.*;
 import java.util.Calendar;
 
 import firstwatch.com.nineelements.nineelementsone.R;
@@ -59,6 +59,8 @@ public class NineWatchWearActivity extends Activity {
 
         setContentView(R.layout.activity_nine_watch_wear);
 
+        float pixels = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics());
+
         LinearLayout verticalLinearLayout = (LinearLayout)findViewById(R.id.verticalLinearLayout);
 
         textViews = new TextView[timeToWords.getWidth()][timeToWords.getHeight()];
@@ -67,16 +69,19 @@ public class NineWatchWearActivity extends Activity {
             LinearLayout horizontalLinearLayout = new LinearLayout(this);
 
             horizontalLinearLayout.setOrientation(LinearLayout.HORIZONTAL);
-            horizontalLinearLayout.setLayoutParams(new LinearLayout.LayoutParams(
+
+            LinearLayout.LayoutParams hparams = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT));
+                    LinearLayout.LayoutParams.WRAP_CONTENT);
+            hparams.weight = 1;
+            horizontalLinearLayout.setLayoutParams(hparams);
             verticalLinearLayout.addView(horizontalLinearLayout);
 
             for (int j = 0; j < timeToWords.getWidth(); j++) {
 
                 TextView textView = new TextView(this);
                 com.nineelements.nineelementsonewatch.models.Character character = characterArray[i][j];
-                textView.setTextSize(15);
+                textView.setTextSize(pixels);
 
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.WRAP_CONTENT,
